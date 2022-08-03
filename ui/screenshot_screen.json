@@ -1,0 +1,44 @@
+// File from PrimeMinus on MCPEDL //
+{
+    "namespace": "screenshot",
+  
+    "new_post_share_post": {
+      "type": "none"
+    },
+    
+    "content_panel": {
+      "type": "panel",
+      "size": [ 300, 210 ],
+      "controls": [
+        { "popup_dialog_bg@feed_common.popup_dialog_bg": {} },
+        {
+          "popup_content": {
+            "type": "panel",
+            "anchor_from": "top_left",
+            "anchor_to": "top_left",
+            "layer": 1,
+            "size": ["100%", "100%"],
+            "controls": [
+              {
+                "new_post_dialog_header@screenshot.new_post_dialog_header": {
+                  "size": [ "100%", "20%" ]
+                }
+              },
+              {
+                "new_post_share_post@screenshot.new_post_share_post": {
+                  "size": [ 0, 0 ],
+                  "offset": [ 0, 0 ]
+                }
+              },
+              {
+                "screenshot_image@screenshot.screenshot_image": {
+                  "size": [ "100%", "75%" ],
+                  "offset": [ 0, "20%" ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
